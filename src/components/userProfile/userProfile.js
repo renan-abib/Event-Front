@@ -35,10 +35,10 @@ const Announces = ({ page }) => {
         <div className={classes.root}>
             <Sidebar page={page} />
             <main className={classes.content}>
-                {/*<div className={classes.mainTitle}>Perfil do usuário</div>*/}
+                <div className={classes.mainTitle}>Perfil do usuário</div>
                 <div className={classes.center}>
                     <div className={classes.createTittle}>Perfil</div>
-                    <div className={classes.createSubTittle}>Informações do perfil</div>
+                    <div className={classes.createSubTittle}>Informações e eventos do perfil</div>
                 </div>
                 <div className={classes.bottom}>
 
