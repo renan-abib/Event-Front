@@ -68,6 +68,13 @@ const useStyles = makeStyles((theme) => ({
     },
     valid: {
         color: "#51fb00"
+    },
+    table: {
+        minWidth: 650,
+      },
+    tableFont:{
+        fontSize: "1.5rem",
+        color: "#E98B0D" 
     }
 }))
 

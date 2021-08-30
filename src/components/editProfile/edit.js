@@ -69,7 +69,7 @@ const EditProfile = ({ page }) => {
                 <div className={classes.center}>
                     <div className={classes.createTittle}>Editando Perfil</div>
                     <div className={classes.createSubTittle}>
-                        Complete seu perfil aqui!
+                        Complete seu perfil aqui mudei!
                     </div>
                 </div>
                 <div className={classes.bottom}>

@@ -1,5 +1,5 @@
-import { Sidebar } from "../src/components/sidebar/sidebar"
+import { UserProfile } from "../src/components/userProfile/profile"
 
 export default function Index() {
-    return <Sidebar page="profile" />
+    return <UserProfile page="profile" />
 }
