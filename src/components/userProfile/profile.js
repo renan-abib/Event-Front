@@ -28,7 +28,10 @@ function createData(evento, datevento, cidade, quando) {
     createData("Cervejada PUCC","10/04/2021", "Campinas", "Daqui a 4 dias"),
     createData("Guarani x Corinthians", "07/04/2021", "Campinas", "Amanhã"),
     createData("Mostra de Carros Antigos", "10/04/2021", "Águas de Lindóia", "Daqui a 4 dias"),
-    createData("Festival Happy Holi", "12/04/2021", "São Paulo", "Daqui a 1 semana"),
+    createData("Oficina de Ruby on Rails", "12/04/2021", "Americana", "Daqui a 1 semana"),
+    createData("Mundo dos Negócios", "22/04/2021", "São Paulo", "Daqui a 1 semana"),
+    createData("Marketing Digital", "31/04/2021", "Indaiatuba", "Daqui a 1 semana"),
+    createData("Peça de Teatro Hamlet", "16/04/2021", "Paulínia", "Daqui a 1 semana"),
   ];
 
 const UserProfile = ({ page }) => {
@@ -74,66 +77,63 @@ const UserProfile = ({ page }) => {
                         <div className={classes.createTittle}>Perfil</div>
                         <div className={classes.createSubTittle}>Informações e eventos do perfil</div>
                     </div>
-                <div className={classes.bottom}>{/* Tudo do perfil vai aqui abaixo */}
-                
-                
-    <div className={classes.time}>
-        <Grid container spacing={3}>
-            <Grid item xs={6} md={6}  justifyContent="center"> 
-                <Card className={classes.root} variant="outlined">
-                    <CardContent>
-                    <img src={avatar} /> 
-                        <h4>Carlos Correia</h4>
-                        <Button variant="contained" color="primary">Seguidores</Button>
-                        <Button variant="contained" color="secondary">Seguindo</Button>
-                    <p className={classes.description}>
-                    <p>Campinas-SP</p>
-                    <p>23 anos</p>
-                    <p>Logo mais formado em Engenharia Química!!</p>
-                    </p>
-
-                    <CardActions>
-                        <Button variant="contained" color="primary">Seguir</Button>
-                    </CardActions>
-                    </CardContent>
-                </Card>
-            </Grid>
+                  <div className={classes.bottom}>{/* Tudo do perfil vai aqui abaixo */}
             
+                        <div className={classes.time}>
+                            <Grid container spacing={3}>
+                                <Grid item xs={6} md={6}  justifyContent="center"> 
+                                    <Card className={classes.root} variant="outlined">
+                                        <CardContent>
+                                        <img src={avatar} /> 
+                                            <h4>Carlos Correia</h4>
+                                            <Button variant="contained" color="primary">Seguidores</Button>
+                                            <Button variant="contained" color="secondary">Seguindo</Button>
+                                        <p className={classes.description}>
+                                        <p>Campinas-SP</p>
+                                        <p>23 anos</p>
+                                        <p>Logo mais formado em Engenharia Química!!</p>
+                                        </p>
+
+                                        <CardActions>
+                                            <Button variant="contained" color="primary">Seguir</Button>
+                                        </CardActions>
+                                        </CardContent>
+                                    </Card>
+                                </Grid>
+                                
 
 
-            <Grid item xs={6} md={6}>
-               
-            <TableContainer component={Paper}>
-      <Table className={classes.table} size="small" aria-label="a dense table">
-        <TableHead>
-          <TableRow>
-            <TableCell className={classes.tableFont}>Evento</TableCell>
-            <TableCell className={classes.tableFont} align="right">Data</TableCell>
-            <TableCell className={classes.tableFont} align="right">Cidade</TableCell>
-            <TableCell className={classes.tableFont} align="right">Quando</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.evento}>
-              <TableCell component="th" scope="row">
-                {row.evento}
-              </TableCell>
-              <TableCell align="right">{row.datevento}</TableCell>
-              <TableCell align="right">{row.cidade}</TableCell>
-              <TableCell align="right">{row.quando}</TableCell>
-            </TableRow>
-          ))} 
-        </TableBody>
-      </Table>
-    </TableContainer>
+                                <Grid item xs={6} md={6}>
+                                  
+                                <TableContainer component={Paper}>
+                          <Table className={classes.table} size="small" aria-label="a dense table">
+                            <TableHead>
+                              <TableRow>
+                                <TableCell className={classes.tableFont}>Evento</TableCell>
+                                <TableCell className={classes.tableFont} align="right">Data</TableCell>
+                                <TableCell className={classes.tableFont} align="right">Cidade</TableCell>
+                                <TableCell className={classes.tableFont} align="right">Quando</TableCell>
+                              </TableRow>
+                            </TableHead>
+                            <TableBody>
+                              {rows.map((row) => (
+                                <TableRow key={row.evento}>
+                                  <TableCell component="th" scope="row">
+                                    {row.evento}
+                                  </TableCell>
+                                  <TableCell align="right">{row.datevento}</TableCell>
+                                  <TableCell align="right">{row.cidade}</TableCell>
+                                  <TableCell align="right">{row.quando}</TableCell>
+                                </TableRow>
+                              ))} 
+                            </TableBody>
+                          </Table>
+                        </TableContainer>
 
-            </Grid>
-        </Grid>
+                                </Grid>
+                            </Grid>
 
-
-
-    </div>
+                  </div>
                 </div>
             </main>
         </div>

@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         marginBottom: "25px",
         borderRadius: "0.5rem",
-        height: "700px",
+        height: "400px",
         width: "100%",
         backgroundColor: "#EEEEEE",
         padding: "2rem"
