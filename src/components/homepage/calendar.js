@@ -73,8 +73,8 @@ export function Calendar({ page }) {
                             <FormControl className={classes.formControl}>
                                 <Select value={age} className={classes.selectText} onChange={handleChange}>
                                     <MenuItem value={10}>Campinas</MenuItem>
-                                    <MenuItem value={20}>Twenty</MenuItem>
-                                    <MenuItem value={30}>Thirty</MenuItem>
+                                    <MenuItem value={20}>Valinhos</MenuItem>
+                                    <MenuItem value={30}>Paulínia</MenuItem>
                                 </Select>
                             </FormControl>
                         </div>
@@ -85,8 +85,8 @@ export function Calendar({ page }) {
                             <FormControl className={classes.formControl}>
                                 <Select value={age} className={classes.selectText} onChange={handleChange}>
                                     <MenuItem value={10}>Festa</MenuItem>
-                                    <MenuItem value={20}>Twenty</MenuItem>
-                                    <MenuItem value={30}>Thirty</MenuItem>
+                                    <MenuItem value={20}>Exposição</MenuItem>
+                                    <MenuItem value={30}>Esporte</MenuItem>
                                 </Select>
                             </FormControl>
                         </div>

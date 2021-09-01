@@ -1,5 +1,5 @@
-import { Sidebar } from "../src/components/sidebar/sidebar"
+import { Favorites } from "../src/components/favorites/favorites"
 
 export default function Index() {
-    return <Sidebar page="favorites" />
+    return <Favorites  page="favorites" />
 }
